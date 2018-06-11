@@ -1,0 +1,58 @@
+<html>
+<title> Paint </title>
+<head>
+  <meta charset="utf-8">
+<link rel = "stylesheet" type="text/css" href="finalStyle.css">
+</head>
+<body>
+
+
+<h1> Paint on a Canvas </h1>
+<div id="userLogin"></div> <!-- where the current logged in user email will be displayed -->
+<div id="gamePlay">
+<button id="playGame" onClick = "canvasAppear()"> Open Canvas </button>
+</div>
+
+
+<div id = "userAccount">
+<p> Email: </p>
+<input type="email" id="email" name="email">
+<br>
+<p> Password: <p>
+<input type="password" id="password" name="password">
+<br><br>
+
+<button id="createAccount" onClick = "createAccount()"> Create Account </button>
+  <br><br>
+<button id="login" onClick = "login()"> Login </button>
+<button id="logout" onClick = "logout()"> Log Out </button>
+</div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBA3DmGEae8LTM-refOx8otgasckozejsA",
+      authDomain: "finalproject-e9a07.firebaseapp.com",
+      databaseURL: "https://finalproject-e9a07.firebaseio.com",
+      projectId: "finalproject-e9a07",
+      storageBucket: "",
+      messagingSenderId: "296072560615"
+    };
+    firebase.initializeApp(config);
+  </script>
+<canvas id="c" width = "500" height = "500"></canvas>
+
+<div id = "color">
+	<button id = "red" onclick = "buttonRed()"> Red </button>
+	<button id = "green" onclick = "buttonGreen()"> Green </button>
+	<button id = "blue" onclick = "buttonBlue()"> Blue </button>
+</div>
+
+
+<script src = "final.js"></script>
+<script src = "finalJS2.js"></script>
+<body>
+</html>
