@@ -13,7 +13,7 @@ document.getElementById("c").style.display = "block";
 
 function mouseClick(e){
   ctx.beginPath();
-  ctx.arc(e.clientX-9, e.clientY-350,r,0,2*Math.PI);
+  ctx.arc(e.clientX-9, e.clientY-250,r,0,2*Math.PI);
   ctx.fill();
 }
 
